@@ -12,7 +12,7 @@ class Settings:
     # Database
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL",
-        "postgresql://user:password@localhost:5432/portfolio_db"
+        "postgresql://user:password@localhost:5433/portfolio_db"
     )
     
     # CORS
