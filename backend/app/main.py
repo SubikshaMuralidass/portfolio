@@ -3,8 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from app.config import settings
 from app.db.database import engine, Base
-from app.routes import ai_chat, metrics
-from app.utils.middleware import log_request_middleware
+from app.routes import ai_chat
 
 # Create database tables on startup
 @asynccontextmanager
@@ -36,11 +35,8 @@ app.add_middleware(
 )
 
 # Request logging middleware
-app.middleware("http")(log_request_middleware)
-
 # Include routers
 app.include_router(ai_chat.router)
-app.include_router(metrics.router)
 
 
 @app.get("/")
