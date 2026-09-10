@@ -53,6 +53,17 @@ jobs:
         with:
           name: backend
 
+      - name: Check Azure OIDC secrets
+        env:
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        run: |
+          test -n "$AZURE_CLIENT_ID" || { echo "AZURE_CLIENT_ID is EMPTY"; exit 1; }
+          test -n "$AZURE_TENANT_ID" || { echo "AZURE_TENANT_ID is EMPTY"; exit 1; }
+          test -n "$AZURE_SUBSCRIPTION_ID" || { echo "AZURE_SUBSCRIPTION_ID is EMPTY"; exit 1; }
+          echo "All Azure OIDC secrets are present."
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
