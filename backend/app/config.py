@@ -21,6 +21,11 @@ class Settings:
         "http://localhost:8000",
         "http://127.0.0.1:3000",
         "http://127.0.0.1:8000",
+
+    # Production frontend
+        "https://www.subikshamuralidass.tech",
+        "https://subikshamuralidass.tech",
+        "https://red-water-04697cc00.3.azurestaticapps.net",
     ]
     
     # AI/LLM
