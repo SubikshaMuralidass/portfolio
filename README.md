@@ -49,7 +49,10 @@ A full-stack developer portfolio showcasing my backend development, AI integrati
 
 ### Cloud and Tools
 - Azure
-- GIT
+• Azure Static Web Apps 
+• Azure App Service 
+• Azure Database for PostgreSQL 
+- GitHub Actions
 
 ## 🤖 AI Assistant
 The portfolio includes an AI assistant that allows visitors to ask questions about my:
