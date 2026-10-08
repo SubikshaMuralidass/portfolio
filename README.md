@@ -13,7 +13,7 @@
    <img src="https://img.shields.io/badge/License-Not%20specified-lightgrey" alt="License not specified">
 </p>
 
-[Visit the portfolio website](https://example.com)
+[Visit the portfolio website](https://wwww.subikshamuralidass.tech)
 
 A full-stack developer portfolio showcasing my backend development, AI integration, projects, achievements, and technical skills.
 
